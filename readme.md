@@ -25,11 +25,11 @@ in the original paper to demonstrate their results. You can see these results he
 
 ## Contents
 This repository provides:
-- A [trained SRCNN] for 3x super-resolution (https://github.com/sdv4/SRCNN/models/)
-- [Code to generate] the training and validation sets (https://github.com/sdv4/SRCNN/src/data/build_sr_dataset.py)
-- The [notebook used to train the model] from scratch (https://github.com/sdv4/SRCNN/notebooks/SR_with_MSE_loss.ipynb)
-- A [notebook] to visualize the first conv. layer kernels (https://github.com/sdv4/SRCNN/src/visualization/visualize_kernels.ipynb)
-- A [notebook] to generate demo images ((https://github.com/sdv4/SRCNN/src/visualization/generate_images.ipynb))
+- A [trained SRCNN] for 3x super-resolution (models/)
+- [Code to generate] the training and validation sets (src/data/build_sr_dataset.py)
+- The [notebook used to train the model] from scratch (notebooks/SR_with_MSE_loss.ipynb)
+- A [notebook] to visualize the first conv. layer kernels (src/visualization/visualize_kernels.ipynb)
+- A [notebook] to generate demo images (src/visualization/generate_images.ipynb)
 
 ## Differences from the paper
 - The paper says that they trained their models for 8x10^8 back-propagations.
@@ -46,7 +46,7 @@ First install the project dependencies:
 pip install -r requirements.txt
 ```
 
-Then download a dataset and move it to [data/raw/] (https://github.com/sdv4/SRCNN/data/raw)
+Then download a dataset and move it to [data/raw/] (data/raw)
 
 Build the training and validation datasets as follows:
 
@@ -56,7 +56,7 @@ python3 src/data/build_sr_dataset.py <path_to_train_images/> <data/train/file_na
 python3 src/data/build_sr_dataset.py <path_to_val_images/> <data/val/file_name.hdf5> <super_resolution_factor>
 ```
 
-Train the model by running the [training notebook] (https://github.com/sdv4/SRCNN/notebooks/SR_with_MSE_loss.ipynb)
+Train the model by running the [training notebook] (notebooks/SR_with_MSE_loss.ipynb)
 
 ## Watch Learning Progression
 
