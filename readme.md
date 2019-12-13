@@ -25,15 +25,15 @@ in the original paper to demonstrate their results. You can see these results he
 
 ## Contents
 This repository provides:
-- A [trained SRCNN] for 3x super-resolution (./models/)
-- [Code to generate] the training and validation sets (./src/data/build_sr_dataset.py)
-- The [notebook used to train the model] from scratch (./notebooks/SR_with_MSE_loss.ipynb)
-- A [notebook] to visualize the first conv. layer kernels (./src/visualization/visualize_kernels.ipynb)
-- A [notebook] to generate demo images (./src/visualization/generate_images.ipynb)
+- A [trained SRCNN] for 3x super-resolution (models/)
+- [Code to generate] the training and validation sets (src/data/build_sr_dataset.py)
+- The [notebook used to train the model] from scratch (notebooks/SR_with_MSE_loss.ipynb)
+- A [notebook] to visualize the first conv. layer kernels (src/visualization/visualize_kernels.ipynb)
+- A [notebook] to generate demo images (src/visualization/generate_images.ipynb)
 
 ## Differences from the paper
-- The paper says that they trained their models for 8x10^8 back-propagations.
-This seems unreasonably long and I suspect that it was a typo. I trained for 15x10^6 and achieved good results.
+- The paper says that they trained their models for 8x10<sup>8</sup> back-propagations.
+This seems unreasonably long and I suspect that it was a typo. I trained for 15x10<sup>6</sup> and achieved good results.
 - The paper says they used no padding while training to avoid boarder effects. I didn't find evidence of this
 problem in my images, so I pad to preserve the input image's dimensions.
 
@@ -46,7 +46,7 @@ First install the project dependencies:
 pip install -r requirements.txt
 ```
 
-Then download a dataset and move it to [data/raw/] (./data/raw)
+Then download a dataset and move it to [data/raw/] (data/raw/)
 
 Build the training and validation datasets as follows:
 
