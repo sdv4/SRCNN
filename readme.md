@@ -1,6 +1,6 @@
 # SRCNN
 
-This is me reproduction of the model and results in the paper
+This is my reproduction of the model and results in the paper
 
 **[Image Super-Resolution Using Deep Convolutional Networks](https://ieeexplore.ieee.org/abstract/document/7115171)**
 <br>
